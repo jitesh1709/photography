@@ -1,0 +1,22 @@
+<div class="container-fluid" id="fh5co-image-grid">
+	<div class="grid">
+	  <div class="grid-sizer"></div>
+		{% for item in site.data.gallery %}
+		  <div class="grid-item item animate-box" data-animate-effect="fadeIn">
+		  		<a href="/single/">
+					<div class="img-wrap">
+						<img src="/images/{{item.url}}" alt="" class="img-responsive">
+					</div>
+					<div class="text-wrap">
+						<div class="text-inner">
+							<div>
+								<h2>{{item.heading}}</h2>
+								<!-- <span>{{item.number}}</span> -->
+							</div>
+						</div>
+					</div>
+				</a>
+		  </div>
+		{% endfor %}
+	</div>
+</div>
